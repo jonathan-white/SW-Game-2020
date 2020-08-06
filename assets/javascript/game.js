@@ -194,12 +194,15 @@ $(document).ready(function() {
 		defenderBaseHP: null,
 		deathCounter: 0,
 		bgSound: new Audio(),
+		
+		//Initialize the characters
 		characters: [
 			{
 				id: "obi",
 				name: "Obi-Wan Kenobi",
 				image: "assets/images/obiwan.jpg",
 				base_hp: 120,
+				current_hp: 120,
 				base_attack: 8,
 				counter_attack: 10
 			},
@@ -208,6 +211,7 @@ $(document).ready(function() {
 				name: "Luke Skywalker",
 				image: "assets/images/luke.jpg",
 				base_hp: 100,
+				current_hp: 100,
 				base_attack: 15,
 				counter_attack: 5
 			},
@@ -216,6 +220,7 @@ $(document).ready(function() {
 				name: "Darth Sidious",
 				image: "assets/images/sidious.jpg",
 				base_hp: 150,
+				current_hp: 150,
 				base_attack: 10,
 				counter_attack: 20
 			},
@@ -224,6 +229,7 @@ $(document).ready(function() {
 				name: "Darth Maul",
 				image: "assets/images/maul.jpg",
 				base_hp: 180,
+				current_hp: 180,
 				base_attack: 12,
 				counter_attack: 25
 			}
@@ -395,7 +401,7 @@ $(document).ready(function() {
 				$(".defender-area .character").remove();
 				$(".playerDamageText").text("You have defeated " + defender + ", you can choose to fight another enemy.");
 				$(".defenderDamageText").text('');
-
+				
 				if($(".enemies-area .character").length === 0) {
 					starWarsRPG.gameover = true;
 					starWarsRPG.deathCounter = 0;
