@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Star Wars RPG Game</title>
+	<!-- Reset -->
+	<link rel="stylesheet" href="assets/css/reset.css">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="assets/javascript/game.js"></script>
+	<script src="assets/javascript/audio.js"></script>
+</head>
+<body>
+	<div class="container">
+		<!-- Start Game Content -->
+		<div id="row-1"></div>
+		<div id="row-2"></div>
+		<div id="row-3"></div>
+		<div id="row-4"></div>
+		<div id="row-5"></div>
+		<!-- End Game Content -->
+
+		<!-- Start Game Menu -->
+		<nav class="menu">
+			<div class="menu-left">
+				<button type="button" class="btn-menu">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="menu-right">
+				<h2>Game Selection</h2>
+				<div class="games">
+					<button class="game-cc">Crystals Collector</button>
+					<button class="game-sw active">Star Wars</button>
+				</div>
+				<h2>Difficulty</h2>
+				<div class="difficulty">
+					<button class="easy active">Easy</button>
+					<button class="hard">Hard</button>
+				</div>
+				<h2>Style</h2>
+				<div class="styles">
+					<button class="style-1">Normal</button>
+					<button class="style-2">Classic</button>
+					<button class="style-3 active">Arcade</button>
+				</div>
+			</div>
+		</nav>
+		<!-- End Game Menu -->
+
+		<!-- Locations Menu -->
+		<div class="locations">
+			<ul class="locations-list">
+				<li class="hoth active">
+					<div class="preview preview-hoth"></div>
+				</li>
+				<li class="jakku">
+					<div class="preview preview-jakku"></div>
+				</li>
+				<li class="endor">
+					<div class="preview preview-endor"></div>
+				</li>
+				<li class="mustafar">
+					<div class="preview preview-mustafar"></div>
+				</li>
+			</ul>
+		</div>
+		<!-- End Locations Menu -->
+	</div>
+	<footer>
+		<a href="https://jonathan-white.github.io/">&copy; 2020 Jon White</a>
+	</footer>
+</body>
+</html>
