@@ -431,6 +431,7 @@ $(document).ready(function() {
 						starWarsRPG.bgSound.pause();
 						starWarsRPG.bgSound.currentTime = 0;
 						if($(".player-area .character").is('.char-2, .char-3') && $(".defender-area .character").is('.char-2, .char-3')) {
+							// If the match up is Luke vs. Sidious play "Welcome young skywalker. I have been expecting you."
 							sounds.sidious_v_luke.play();
 						}else if ($(".player-area .character").is('.char-1, .char-4') && $(".defender-area .character").is('.char-1, .char-4')) {
 							starWarsRPG.bgSound = sounds.duel_of_fates;
