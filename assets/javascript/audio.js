@@ -9,7 +9,9 @@ const sounds = {
 	yodasTwoCents: function(){
 		const yodaSayings = [
 			new Audio('assets/audio/yoda_dange-disturb.mp3'), 
-			new Audio('assets/audio/yoda_do_or_do_not.wav')
+			new Audio('assets/audio/yoda_do_or_do_not.wav'),
+			new Audio('assets/audio/yoda_control.wav'),
+			new Audio('assets/audio/always_with_you.wav')
 		];
 		const rand = Math.floor(Math.random() * yodaSayings.length);
 		return yodaSayings[rand];
